@@ -5,13 +5,14 @@
     "description": "",
     "main": "ttt-server.js",
     "scripts": {
-        "test": "jest"
+        "test": "mocha"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "dependencies": {
         "dotenv": "^16.2.0",
+        "mocha": "^10.2.0",
         "prompt-sync": "^4.2.0",
         "ws": "^8.13.0"
     }
