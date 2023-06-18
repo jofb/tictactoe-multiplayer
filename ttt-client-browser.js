@@ -11,11 +11,10 @@ for (let i = 1; i <= 9; i++) {
     board.push(document.getElementById(i));
 }
 
-const host = "ttt-multiplayer-f664.onrender.com";
-// const host = "localhost";
-const port = 55882;
+const host = import.meta.env.VITE_SERVER_URL;
+
 const address = `wss://${host}`;
-// const address = `ws://${host}:${port}`;
+
 const socket = new WebSocket(address);
 
 socket.onerror = (event) => {
